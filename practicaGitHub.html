@@ -1,4 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
+    <p>Prctica Git Hub</p>
+    <p><br></p>
+<p><img src="https://lh4.googleusercontent.com/aCStDccaU5zBYZ8C6fU9h4yJW8C5aGAx162R_z2Js3zQh3RJXLPhPPChn9id6-jQgOqEPFxcnsk508OuCcIoTCom3DIYchTHv87Hv3ITCF4FJEjCYF-5CwQMOpLHDTg7tYQvRwK9IOANBv-bE4ninJDmExTSSNlgImX_IrKuStx1ukkOQ9x8QN-cwmoekg" width="602" height="183"></p>
+<p><br></p>
+<p>En el ejercicio de temas avanzado 1 , se plantea el problema de que el personal de administracion y que necesitan que los comit esten en un orden secuencial.</p>
+<p><img 
+    src="https://lh6.googleusercontent.com/46nqDEPrTLQmeym9LhrjHcrIOao_hKMQse1i6mIyJmfMm1JBh7bAXzTDIjuqVG887KV_shhyGLHReEvXXvjVFuslt6zTB827NEZ-NE2YX-fDVG6JgOHfaMU8T3zLfqCg3tjARxun2ceEoZNUVelfi9otFwgNL9FeNWBwOoaW6HSDeTL4oRJQGZt_r5lASg" width="602" height="359"></p>
+<p><br></p>
+<p>El problema esta planteado de esta forma, por lo que se necesita reorganizar las ramas y colocar los commit para que queden de un orden secuencial.</p>
+<p>El primer comando que vamos a utilizar es un git rebase, esto permite modificar de una rama a otra. Por lo que la rama bug Fix esta asignada al comit c3, introducimos el comando git rebase main bugFix, para que el comit c3 se integre detras de la rama main que en este caso esta asignada al comit c2.</p>
+<p><img src="https://lh6.googleusercontent.com/EbDQXPC6veKqDj7rWV0H87oZv6chjeRos1qbKPBsOve73OQxlwQ89iAn2sVeumfB1MSFaMyXxLuk9uZtQs_w3aPfntaQ7_tfShllRIeLOonPZGFaIYQVXprnfcDpIL-0MZNY0YJAUzEmVdd6SrrMfFCYWFgA_P1Htcg2CdFIHOA3cS3pbx4QTD_nOGAwAg" width="602" height="139"></p>
+<p><br></p>
+<p>El siguiente paso es similar al anterior pero en este vamos a utilizar el mismo comando, pero vamos a mover la rama side detras de la rama bug Fix. En la rama side se encontraban los commit c4, c5 y c6 por los que todos estos se colocaron detras del comit c3 y estariamos llevando el orden que nos pide el personal de administracion.</p>
+<p><img src="https://lh4.googleusercontent.com/BWThwYNhpDnUJylDlxyoN2Q1oq3jeTQFw3HYjbn9tkCamjndeeqhM4PPbJHjsvc_yKuyDXx4PLnupjhl5vJKI-QYMHo4Yx7mCMnzC_MYzSYYAbAlcstp6tC9f4GIQM83qD9hRb5FE_AYjKNSPWNJm-2dB8Uuf_cHsCLqzW5nhFeS8qjLqB_8H_WvX80FTw" width="602" height="296"></p>
+<p><br></p>
+<p>El siguiente paso es modificar la rama another que esta asignada al comit c7 como podemos observar en la segunda imagen. El proceso es el mismo que en los anteriores, utilizando el comando git rebase side another.</p>
+<p><br></p>
+<p><img src="https://lh5.googleusercontent.com/lT7EL3jliaPEiinLVAvZRBDeN7xPrLW5i6ST9uZB4-3sB5t6vpHQar8q7abr0Q6DRrbbiEGHhK5cnIX9CzGN7CaDnOPIygINGMSZyQyeVUCB1pv68IHelX3AEAzCUu0aXCNMHShtUTVOjMLIWuZZHl7kjiVHsF9ZM5JZef9op09YqcbSSxe0JaLHtsGNmA" width="612" height="322"></p>
+<p><br></p>
+<p>Como podemos observar la rama main esta asignada al comit c2, la rama main es una rama predeterminada que se crea automaticamente cuando se crea un repositorio, por lo que utilizando git rebase another main movemos esta rama junto a la rama another.</p>
+<p><br></p>
+<p><img src="https://lh4.googleusercontent.com/cwWxGzO3YsG6Kuob-v6T8h0B0Pzn59VK5gCx0sjMFlyPua5F-ez1qxSt96LQNX60uabuiB5uoi1acql1hx9X_QFHwondnEOkPiCk0wOU0HPUgnHi_zH4LZqyUYX9FDsz7VBYfgcIfQ3K6IJ5G6vXi45xPHn3vPS4Y6ZjiTQtyVX7WAS_NiABdoI53tRnZw" width="278" height="230"></p>
